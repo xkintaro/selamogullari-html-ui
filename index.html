@@ -1,0 +1,1025 @@
+<!doctype html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ana Sayfa</title>
+  <link rel="stylesheet" href="css/fancybox.css" />
+  <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/output.css" />
+</head>
+
+<body data-aether-auto>
+  <header class="z-navbar">
+    <div class="aether-container h-navbar">
+      <div class="flex w-full h-full items-center justify-between">
+        <img src="images/logo.svg" alt="" class="xl:w-72" />
+        <nav class="hidden xl:flex items-center gap-16">
+          <a href="index.html"
+            class="text-secondary uppercase text-base font-medium hover:text-secondary-interactive hover:underline transition-all duration-300">
+            Anasayfa
+          </a>
+          <a href="corporate.html"
+            class="text-secondary uppercase text-base font-medium hover:text-secondary-interactive hover:underline transition-all duration-300">
+            Kurumsal
+          </a>
+          <a href="products.html"
+            class="text-secondary uppercase text-base font-medium hover:text-secondary-interactive hover:underline transition-all duration-300">
+            Ürünler
+          </a>
+          <a href="media.html"
+            class="text-secondary uppercase text-base font-medium hover:text-secondary-interactive hover:underline transition-all duration-300">
+            Medya
+          </a>
+          <a href="contact.html"
+            class="text-secondary uppercase text-base font-medium hover:text-secondary-interactive hover:underline transition-all duration-300">
+            İletişim
+          </a>
+          <div class="relative">
+            <button
+              class="cursor-pointer size-8 text-secondary hover:text-secondary-interactive transition-all duration-300"
+              data-aether-trigger="ui-control" data-aether-target="dropdown-1">
+              <i data-aether-icon="add" class="size-full"></i>
+            </button>
+            <div id="dropdown-1"
+              class="hidden absolute left-1/2 transform -translate-x-1/2 mt-2 w-96 bg-primary border border-primary rounded-xl shadow-xl z-50 overflow-hidden transition-all"
+              data-aether-click-outside data-aether-active-class="block" data-aether-inactive-class="hidden">
+              <div class="p-5">
+                <a href="#"
+                  class="block px-4 py-6 border-b border-primary text-sm text-secondary hover:text-secondary-interactive transition-all duration-300">Sürdürülebilirlik</a>
+                <a href="#"
+                  class="block px-4 py-6 border-b border-primary text-sm text-secondary hover:text-secondary-interactive transition-all duration-300">Etik
+                  Değerler</a>
+                <a href="#"
+                  class="block px-4 py-6 border-b border-primary text-sm text-secondary hover:text-secondary-interactive transition-all duration-300">Dökümantasyon</a>
+                <a href="#"
+                  class="block px-4 py-6 text-sm text-secondary hover:text-secondary-interactive transition-all duration-300">Üretim</a>
+                <a href="#"
+                  class="flex items-center justify-between px-4 py-6 text-sm rounded-lg bg-accent hover:bg-accent-interactive text-primary hover:text-primary-interactive transition-all duration-300">B2B
+                  Sistemine Giriş Yap
+                  <i data-aether-icon="right-arrow" class="size-5"></i></a>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="flex items-center gap-2 md:gap-3 xl:gap-4">
+          <button
+            class="size-10 xl:size-14 p-2 xl:p-4 flex items-center justify-center rounded-2xl bg-accent hover:bg-accent-interactive cursor-pointer text-primary hover:text-primary-interactive transition-colors duration-300">
+            <i data-aether-icon="magnifier" class="size-full"></i>
+          </button>
+          <div class="relative max-xl:hidden">
+            <button
+              class="size-10 xl:size-14 p-2 xl:p-4 flex items-center justify-center rounded-2xl bg-tertiary hover:bg-tertiary-interactive cursor-pointer transition-colors duration-300"
+              data-aether-trigger="ui-control" data-aether-target="dropdown-2">
+              <img src="flags/tr.svg" alt="" class="rounded-full size-full" />
+            </button>
+            <div id="dropdown-2"
+              class="w-16 hidden absolute left-1/2 transform -translate-x-1/2 mt-2 bg-primary border border-primary rounded-xl shadow-xl z-50 overflow-hidden transition-all"
+              data-aether-click-outside data-aether-active-class="block" data-aether-inactive-class="hidden">
+              <div class="p-5 flex flex-col gap-5">
+                <div class="size-6 overflow-hidden rounded-full relative cursor-pointer">
+                  <img src="flags/gb.svg" alt="" class="rounded-full size-full" />
+                </div>
+                <div class="size-6 overflow-hidden rounded-full relative cursor-pointer">
+                  <img src="flags/ru.svg" alt="" class="rounded-full size-full" />
+                </div>
+                <div class="size-6 overflow-hidden rounded-full relative cursor-pointer">
+                  <img src="flags/de.svg" alt="" class="rounded-full size-full" />
+                </div>
+                <div class="size-6 overflow-hidden rounded-full relative cursor-pointer">
+                  <img src="flags/sa.svg" alt="" class="rounded-full size-full" />
+                </div>
+                <div class="size-6 overflow-hidden rounded-full relative cursor-pointer">
+                  <img src="flags/es.svg" alt="" class="rounded-full size-full" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <button data-aether-trigger="ui-control" data-aether-target="offcanvas"
+            class="size-10 xl:size-14 p-2 xl:p-4 flex xl:hidden items-center justify-center rounded-2xl bg-accent hover:bg-accent-interactive cursor-pointer text-primary hover:text-primary-interactive transition-colors duration-300">
+            <i data-aether-icon="menu" class="size-full"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div id="offcanvas" data-aether-scroll-lock data-aether-click-outside data-aether-focus-trap
+    class="hidden fixed inset-0 z-popup flex justify-end">
+    <div class="absolute inset-0 bg-primary/50 backdrop-blur-xl" data-aether-trigger="ui-control"
+      data-aether-target="offcanvas"></div>
+    <div
+      class="relative w-full sm:max-w-112.5 h-full xl:border-l border-accent/20 bg-primary/80 backdrop-blur-xl shadow-2xl flex flex-col">
+      <div class="px-aether-container-gap sm:px-3 h-navbar border-b border-accent/20 flex items-center justify-between">
+        <a href="index.html" class="flex items-center"><img src="images/logo.svg" loading="lazy"
+            alt="Logo" /></a><button data-aether-trigger="ui-control" data-aether-target="offcanvas"
+          class="size-10 xl:size-14 p-2 xl:p-4 flex items-center justify-center rounded-2xl bg-accent hover:bg-accent-interactive cursor-pointer text-primary hover:text-primary-interactive transition-colors duration-300">
+          <i data-aether-icon="close" class="size-full"></i>
+        </button>
+      </div>
+      <div class="flex-1 overflow-y-auto p-5 space-y-6 no-scrollbar">
+        <div class="space-y-1">
+          <div class="text-[10px] font-bold text-tertiary uppercase tracking-wider px-2 mb-2">
+            Navigation
+          </div>
+          <a href="index.html"
+            class="flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-tertiary-interactive/50 text-secondary hover:text-secondary-interactive transition-colors duration-300 cursor-pointer"><span
+              class="text-sm font-medium">Home</span></a><a href="corporate.html"
+            class="flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-tertiary-interactive/50 text-secondary hover:text-secondary-interactive transition-colors duration-300 cursor-pointer"><span
+              class="text-sm font-medium">Corporate</span></a>
+          <div data-aether-ui="accordion-group">
+            <button data-aether-trigger="accordion" data-aether-target="offcanvas-products-menu"
+              class="w-full justify-between flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-tertiary-interactive/50 text-secondary hover:text-secondary-interactive transition-colors duration-300 cursor-pointer group">
+              <span class="text-sm font-medium">Products</span><i data-aether-icon="down-chevron"
+                class="size-4 text-xs fill-current text-tertiary group-aria-expanded:rotate-180 transition-transform"></i>
+            </button>
+            <div id="offcanvas-products-menu" data-aether-ui="accordion-panel">
+              <div class="pl-10 pr-2 py-1 space-y-1 border-l border-accent/20 ml-5">
+                <a href="products.html"
+                  class="block py-1.5 text-sm text-secondary hover:text-primary transition-colors">Test Product 1</a><a
+                  href="products.html"
+                  class="block py-1.5 text-sm text-secondary hover:text-primary transition-colors">Test Product 2</a><a
+                  href="products.html"
+                  class="block py-1.5 text-sm text-secondary hover:text-primary transition-colors">Test Product 3</a>
+              </div>
+            </div>
+          </div>
+          <a href="media.html"
+            class="flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-tertiary-interactive/50 text-secondary hover:text-secondary-interactive transition-colors duration-300 cursor-pointer"><span
+              class="text-sm font-medium">Media</span></a><a href="contact.html"
+            class="flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-tertiary-interactive/50 text-secondary hover:text-secondary-interactive transition-colors duration-300 cursor-pointer"><span
+              class="text-sm font-medium">Contact Us</span></a>
+        </div>
+      </div>
+      <div class="p-5 border-t border-accent/20 space-y-4">
+        <div data-aether-ui="accordion-group">
+          <button data-aether-trigger="accordion" data-aether-target="offcanvas-language"
+            class="w-full flex items-center cursor-pointer justify-between px-3 py-2 rounded-lg border border-accent/20 hover:border-accent/20-interactive bg-transparent text-sm text-secondary hover:text-secondary-interactive group transition-colors">
+            <div class="flex items-center gap-2">
+              <img src="flags/gb.svg" loading="lazy" alt="en"
+                class="size-5 rounded-full border border-accent/20" /><span class="font-medium uppercase">en</span>
+            </div>
+            <i data-aether-icon="down-chevron"
+              class="size-4 text-xs fill-current text-tertiary group-aria-expanded:rotate-180 transition-transform"></i>
+          </button>
+          <div id="offcanvas-language" data-aether-ui="accordion-panel">
+            <div class="pl-10 pr-2 py-1 space-y-1 border-l border-accent/20 ml-5 mt-1">
+              <a href="#"
+                class="flex items-center gap-2 py-1.5 text-sm text-secondary hover:text-secondary-interactive transition-colors"><img
+                  src="flags/de.svg" loading="lazy" alt="en" class="size-5 rounded-full border border-accent/20" /><span
+                  class="font-medium uppercase">de</span></a><a href="#"
+                class="flex items-center gap-2 py-1.5 text-sm text-secondary hover:text-secondary-interactive transition-colors"><img
+                  src="flags/es.svg" loading="lazy" alt="en" class="size-5 rounded-full border border-accent/20" /><span
+                  class="font-medium uppercase">es</span></a><a href="#"
+                class="flex items-center gap-2 py-1.5 text-sm text-secondary hover:text-secondary-interactive transition-colors"><img
+                  src="flags/fr.svg" loading="lazy" alt="en" class="size-5 rounded-full border border-accent/20" /><span
+                  class="font-medium uppercase">fr</span></a><a href="#"
+                class="flex items-center gap-2 py-1.5 text-sm text-secondary hover:text-secondary-interactive transition-colors"><img
+                  src="flags/tr.svg" loading="lazy" alt="tr" class="size-5 rounded-full border border-accent/20" /><span
+                  class="font-medium uppercase">tr</span></a><a href="#"
+                class="flex items-center gap-2 py-1.5 text-sm text-secondary hover:text-secondary-interactive transition-colors"><img
+                  src="flags/ru.svg" loading="lazy" alt="en" class="size-5 rounded-full border border-accent/20" /><span
+                  class="font-medium uppercase">ru</span></a><a href="#"
+                class="flex items-center gap-2 py-1.5 text-sm text-secondary hover:text-secondary-interactive transition-colors"><img
+                  src="flags/sa.svg" loading="lazy" alt="en" class="size-5 rounded-full border border-accent/20" /><span
+                  class="font-medium uppercase">ar</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    .swiper-pagination-bullet {
+      width: 12px;
+      height: 12px;
+      background: rgba(255, 255, 255, 0.5);
+      opacity: 1;
+      transition: all 0.3s ease;
+    }
+
+    .swiper-pagination-bullet-active {
+      background: #fff;
+      width: 30px;
+      border-radius: 6px;
+    }
+  </style>
+
+  <section class="aether-container">
+    <div class="overflow-hidden rounded-2xl">
+      <div class="swiperMain swiper w-full h-[calc(100vh-var(--navbar-h)-2rem)]">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="relative w-full h-full flex items-end">
+              <video autoplay loop muted playsinline
+                class="absolute inset-0 w-full h-full object-cover pointer-events-none">
+                <source src="videos/TBQRRVPUKBETIVD.mp4" type="video/mp4" />
+              </video>
+              <div class="absolute inset-0 bg-black/10"></div>
+
+              <div class="relative z-10 aether-container h-full w-full flex flex-col aether-container">
+                <div class="h-full w-full flex justify-between items-center aether-container">
+                  <div class="flex flex-col gap-2 h-full justify-center">
+                    <p class="text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl text-white/20 font-host mb-2"
+                      data-swiper-parallax="-400">
+                      01
+                    </p>
+
+                    <p class="subtitle-primary aether-text-tracking text-white/50 font-saira"
+                      data-swiper-parallax="-300">
+                      SELAMOĞULLARI OTOMOTİV
+                    </p>
+                    <p class="title-primary text-white mb-9 pb-6 border-b-5 border-accent w-fit"
+                      data-swiper-parallax="-200">
+                      YEDEK PARÇA<br />
+                      ÇÖZÜMLERİNDE<br />
+                      ÖNCÜ
+                    </p>
+                    <div class="w-full flex gap-4" data-swiper-parallax="-100">
+                      <a href="#" class="btn-1 not-dark:text-white">
+                        Kurumsal
+                        <i data-aether-icon="right-arrow" class="size-5"></i>
+                      </a>
+                      <div
+                        class="main-prev size-12 lg:size-16 p-1 lg:p-5 hidden md:flex justify-between items-center text-primary border border-primary rounded-2xl cursor-pointer">
+                        <i data-aether-icon="left-arrow" class="size-full"></i>
+                      </div>
+                      <div
+                        class="main-next size-12 lg:size-16 p-1 lg:p-5 hidden md:flex justify-between items-center text-primary border border-primary rounded-2xl cursor-pointer">
+                        <i data-aether-icon="right-arrow" class="size-full"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="hidden xl:flex">
+                    <div class="flex items-center text-right gap-4 text-white text-base" data-swiper-parallax="-200">
+                      <p>
+                        Tanıtım<br />
+                        Filmimizi<br />
+                        İzleyin
+                      </p>
+                      <button data-fancybox data-src="videos/TBQRRVPUKBETIVD.mp4"
+                        class="size-12 md:size-24 xl:size-36 p-4 md:p-8 xl:p-12 rounded-full cursor-pointer border border-white/50 hover:border-white text-white hover:bg-white/10 active:scale-95 transition-all duration-300">
+                        <i data-aether-icon="play" class="w-full h-full"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex justify-between items-center pb-12 aether-container max-sm:hidden">
+                  <p class="text-white/50 text-lg" data-swiper-parallax="-300">
+                    Gücü parçada, güveni yolda hisset.
+                  </p>
+                  <div class="bg-white/20 rounded-2xl backdrop-blur-xs py-5 px-8 flex gap-8 items-center"
+                    data-swiper-parallax="-300">
+                    <i data-aether-icon="instagram"
+                      class="size-8 text-white cursor-pointer hover:text-white/80 transition-all duration-300"></i>
+                    <i data-aether-icon="facebook"
+                      class="size-8 text-white cursor-pointer hover:text-white/80 transition-all duration-300"></i>
+                    <i data-aether-icon="twitter"
+                      class="size-8 text-white cursor-pointer hover:text-white/80 transition-all duration-300"></i>
+                    <i data-aether-icon="linkedin"
+                      class="size-8 text-white cursor-pointer hover:text-white/80 transition-all duration-300"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="relative w-full h-full flex items-end">
+              <video autoplay loop muted playsinline
+                class="absolute inset-0 w-full h-full object-cover pointer-events-none">
+                <source src="videos/TBQRRVPUKBETIVD.mp4" type="video/mp4" />
+              </video>
+              <div class="absolute inset-0 bg-black/10"></div>
+
+              <div class="relative z-10 aether-container h-full w-full flex flex-col aether-container">
+                <div class="h-full w-full flex justify-between items-center aether-container">
+                  <div class="flex flex-col gap-2 h-full justify-center">
+                    <p class="text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl text-white/20 font-host mb-2"
+                      data-swiper-parallax="-400">
+                      02
+                    </p>
+
+                    <p class="subtitle-primary aether-text-tracking text-white/50 font-saira"
+                      data-swiper-parallax="-300">
+                      SELAMOĞULLARI OTOMOTİV
+                    </p>
+                    <p class="title-primary text-white mb-9 pb-6 border-b-5 border-accent w-fit"
+                      data-swiper-parallax="-200">
+                      YEDEK PARÇA<br />
+                      ÇÖZÜMLERİNDE<br />
+                      ÖNCÜ
+                    </p>
+                    <div class="w-full flex gap-4" data-swiper-parallax="-100">
+                      <a href="#" class="btn-1 not-dark:text-white">
+                        Kurumsal
+                        <i data-aether-icon="right-arrow" class="size-5"></i>
+                      </a>
+                      <div
+                        class="main-prev size-12 lg:size-16 p-1 lg:p-5 hidden md:flex justify-between items-center text-primary border border-primary rounded-2xl cursor-pointer">
+                        <i data-aether-icon="left-arrow" class="size-full"></i>
+                      </div>
+                      <div
+                        class="main-next size-12 lg:size-16 p-1 lg:p-5 hidden md:flex justify-between items-center text-primary border border-primary rounded-2xl cursor-pointer">
+                        <i data-aether-icon="right-arrow" class="size-full"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="hidden xl:flex">
+                    <div class="flex items-center text-right gap-4 text-white text-base" data-swiper-parallax="-200">
+                      <p>
+                        Tanıtım<br />
+                        Filmimizi<br />
+                        İzleyin
+                      </p>
+                      <button data-fancybox data-src="videos/TBQRRVPUKBETIVD.mp4"
+                        class="size-12 md:size-24 xl:size-36 p-4 md:p-8 xl:p-12 rounded-full cursor-pointer border border-white/50 hover:border-white text-white hover:bg-white/10 active:scale-95 transition-all duration-300">
+                        <i data-aether-icon="play" class="w-full h-full"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex justify-between items-center pb-12 aether-container max-sm:hidden">
+                  <p class="text-white/50 text-lg" data-swiper-parallax="-300">
+                    Gücü parçada, güveni yolda hisset.
+                  </p>
+                  <div class="bg-white/20 rounded-2xl backdrop-blur-xs py-5 px-8 flex gap-8 items-center"
+                    data-swiper-parallax="-300">
+                    <i data-aether-icon="instagram"
+                      class="size-8 text-white cursor-pointer hover:text-white/80 transition-all duration-300"></i>
+                    <i data-aether-icon="facebook"
+                      class="size-8 text-white cursor-pointer hover:text-white/80 transition-all duration-300"></i>
+                    <i data-aether-icon="twitter"
+                      class="size-8 text-white cursor-pointer hover:text-white/80 transition-all duration-300"></i>
+                    <i data-aether-icon="linkedin"
+                      class="size-8 text-white cursor-pointer hover:text-white/80 transition-all duration-300"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="h-aether-section-gap-secondary"></div>
+
+  <section class="aether-container">
+    <div
+      class="overflow-hidden mask-[linear-gradient(to_right,transparent,var(--bg-primary)_10%,var(--bg-primary)_90%,transparent)]">
+      <div id="marquee-track" class="aether-animate-marquee gap-6 pause-on-hover">
+        <img src="images/brands/mercedes.svg" alt="Mercedes" />
+        <img src="images/brands/man.svg" alt="Man" />
+        <img src="images/brands/scania.svg" alt="Scania" />
+        <img src="images/brands/renault.svg" alt="Renault" />
+        <img src="images/brands/volvo.svg" alt="Volvo" />
+        <img src="images/brands/bwp.svg" alt="BWP" />
+        <img src="images/brands/daf.svg" alt="DAF" />
+        <img src="images/brands/iveco.svg" alt="Iveco" />
+      </div>
+    </div>
+  </section>
+
+  <div class="h-aether-section-gap-secondary"></div>
+
+  <section class="aether-container">
+    <div class="relative min-h-[80vh] overflow-hidden bg-secondary">
+      <img src="images/DHVLZIPKQHFIAUL.webp" alt=""
+        class="absolute inset-0 w-full h-full select-none pointer-events-none z-0 max-sm:object-cover" />
+      <p class="text-[200px] text-tertiary/20 z-10 absolute font-boldonse select-none pointer-events-none">
+        SELAMOGULLARISELAMOGULLARISELAMOGULLARI
+      </p>
+      <img src="images/FIEJIRRFKQBIORA.webp" alt=""
+        class="absolute bottom-0 w-full h-auto max-xl:hidden select-none pointer-events-none z-20" />
+      <div class="relative inset-0 w-full h-full z-30 aether-container py-12">
+        <div class="flex flex-col w-full gap-10 aether-container">
+          <div class="flex flex-col xl:flex-row items-center gap-10">
+            <div class="flex flex-col gap-3 w-full">
+              <p class="subtitle-secondary">SELAMOĞULLARI OTOMOTİV</p>
+              <h2 class="title-secondary w-fit border-b-5 border-primary pb-5 mb-12">
+                ARACINIZ İÇİN<br />
+                DOĞRU YOL ARKADAŞI
+              </h2>
+              <p class="text-primary text-base">
+                Selamoğulları A.Ş., otomotiv yedek parça sektöründeki
+                yolculuğuna 1987 yılında Konya Motorlu Sanayi Çarşısı’nda
+                başlamış; kurulduğu günden bu yana güçlü pazarlama
+                organizasyonu, yaygın bayi ağı ve disiplinli operasyonel
+                yapısıyla sektörde güvenilir bir marka haline gelmiştir.
+              </p>
+            </div>
+            <div class="flex flex-col gap-5 xl: items-end w-full">
+              <button class="btn-1">
+                Kurumsal
+                <i data-aether-icon="right-arrow" class="size-5"></i>
+              </button>
+              <img src="images/YWFLYVQOAQAPDOB.webp" alt=""
+                class="w-full h-auto object-cover rounded-2xl select-none pointer-events-none" />
+            </div>
+          </div>
+          <div class="grid md:grid-cols-2 2xl:grid-cols-4 gap-5">
+            <div class="bg-accent rounded-2xl px-10 py-12 border border-primary/20 flex flex-col gap-10">
+              <div class="w-full h-full flex justify-between">
+                <p class="text-primary text-4xl md:text-6xl xl:text-7xl font-bold" data-countup="35"
+                  data-countup-options='{"suffix": "+"}'>
+                  0
+                </p>
+                <p class="text-primary max-sm:text-sm text-right">
+                  Geçmişten<br />Aldığımız<br />Güç
+                </p>
+              </div>
+              <div class="h-1 bg-tertiary/50 w-full"></div>
+            </div>
+
+            <div class="bg-accent rounded-2xl px-10 py-12 border border-primary/20 flex flex-col gap-10">
+              <div class="w-full h-full flex justify-between">
+                <p class="text-primary text-4xl md:text-6xl xl:text-7xl font-bold" data-countup="24"
+                  data-countup-options='{"suffix": "+"}'>
+                  0
+                </p>
+                <p class="text-primary max-sm:text-sm text-right">
+                  Selamoğlu<br />Gücünün<br />Ulaştığı Ülke
+                </p>
+              </div>
+              <div class="h-1 bg-tertiary/50 w-full"></div>
+            </div>
+
+            <div class="bg-accent rounded-2xl px-10 py-12 border border-primary/20 flex flex-col gap-10">
+              <div class="w-full h-full flex justify-between">
+                <p class="text-primary text-4xl md:text-6xl xl:text-7xl font-bold" data-countup="3.8"
+                  data-countup-options='{"suffix": "K+", "decimalPlaces": 1}'>
+                  0
+                </p>
+                <p class="text-primary max-sm:text-sm text-right">
+                  Aylık<br />Üretim<br />Kapasitesi
+                </p>
+              </div>
+              <div class="h-1 bg-tertiary/50 w-full"></div>
+            </div>
+
+            <div class="bg-accent rounded-2xl px-10 py-12 border border-primary/20 flex flex-col gap-10">
+              <div class="w-full h-full flex justify-between">
+                <p class="text-primary text-4xl md:text-6xl xl:text-7xl font-bold" data-countup="500"
+                  data-countup-options='{"suffix": "+"}'>
+                  0
+                </p>
+                <p class="text-primary max-sm:text-sm text-right">
+                  Kaliteyle<br />Üretilmiş<br />Ürün Gamı
+                </p>
+              </div>
+              <div class="h-1 bg-tertiary/50 w-full"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="aether-container">
+    <div class="relative min-h-[80vh] overflow-hidden bg-secondary">
+      <p class="text-[200px] text-tertiary/10 z-0 absolute bottom-24 font-boldonse select-none pointer-events-none">
+        SELAMOGULLARISELAMOGULLARISELAMOGULLARI
+      </p>
+      <div class="flex flex-col gap-10 w-full h-full">
+        <div class="flex items-center justify-end aether-container">
+          <div class="hidden xl:flex gap-2">
+            <div
+              class="product-prev size-16 p-4 flex justify-between items-center border border-accent hover:border-accent-interactive hover:bg-accent-interactive text-accent hover:text-primary-interactive active:scale-95 transition-all duration-300 rounded-2xl cursor-pointer">
+              <i data-aether-icon="left-chevron" class="size-full"></i>
+            </div>
+            <div
+              class="product-next size-16 p-4 flex justify-between items-center border border-accent hover:border-accent-interactive hover:bg-accent-interactive text-accent hover:text-primary-interactive active:scale-95 transition-all duration-300 rounded-2xl cursor-pointer">
+              <i data-aether-icon="right-chevron" class="size-full"></i>
+            </div>
+            <button class="btn-1 text-accent border-accent">
+              Kurumsal
+              <i data-aether-icon="right-arrow" class="size-5"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="block xl:flex items-center justify-between pr-5 max-xl:px-5">
+          <div class="aether-container xl:w-fit justify-start items-start max-sm:text-center">
+            <div class="flex flex-col gap-2 aether-container xl:w-fit justify-start items-start max-sm:text-center">
+              <p class="subtitle-secondary w-fit">KALİTE VE TECRÜBE</p>
+              <h2
+                class="title-secondary text-accent xl:w-fit border-b-5 border-accent pb-5 mb-12 flex-nowrap text-nowrap max-sm:text-center">
+                ARACINIZIN KALBİNDE<br />
+                GÜVEN SAĞLAR.
+              </h2>
+            </div>
+          </div>
+          <div class="swiper swiperProducts w-full">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide h-auto!">
+                <a href="#" class="group">
+                  <div
+                    class="aspect-4/5 w-full h-full bg-white relative flex rounded-2xl flex-col items-center justify-center group-hover:bg-accent transition-all duration-300">
+                    <p
+                      class="md:text-[150px] lg:text-[170px] xl:text-[200px] 2xl:text-[250px] transform rotate-270 text-secondary/10 font-host font-bold tracking-widest absolute z-0">
+                      001
+                    </p>
+                    <img src="images/ZJGMGMULGPPZIPJ.webp" alt="" class="w-full relative z-10 object-cover" />
+                    <p
+                      class="text-accent text-xl xl:text-2xl 2xl:text-3xl font-semibold text-end absolute z-20 bottom-10 right-10 group-hover:text-primary transition-all duration-300">
+                      Aks ve<br />Aktarma Parçaları
+                    </p>
+                    <div
+                      class="size-16 p-4 hidden group-hover:flex justify-between absolute top-10 right-10 items-center border border-primary hover:border-primary-interactive hover:bg-primary-interactive text-primary hover:text-primary-interactive active:scale-95 transition-all duration-300 rounded-2xl cursor-pointer">
+                      <i data-aether-icon="right-chevron" class="size-full"></i>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide h-auto!">
+                <a href="#" class="group">
+                  <div
+                    class="aspect-4/5 w-full h-full bg-white relative flex rounded-2xl flex-col items-center justify-center group-hover:bg-accent transition-all duration-300">
+                    <p
+                      class="md:text-[150px] lg:text-[170px] xl:text-[200px] 2xl:text-[250px] transform rotate-270 text-secondary/10 font-host font-bold tracking-widest absolute z-0">
+                      002
+                    </p>
+                    <img src="images/JOJWWMUWJOEJVTF.webp" alt="" class="w-full relative z-10 object-cover" />
+                    <p
+                      class="text-accent text-xl xl:text-2xl 2xl:text-3xl font-semibold text-end absolute z-20 bottom-10 right-10 group-hover:text-primary transition-all duration-300">
+                      Süspansiyon Parçaları
+                    </p>
+                    <div
+                      class="size-16 p-4 hidden group-hover:flex justify-between absolute top-10 right-10 items-center border border-primary hover:border-primary-interactive hover:bg-primary-interactive text-primary hover:text-primary-interactive active:scale-95 transition-all duration-300 rounded-2xl cursor-pointer">
+                      <i data-aether-icon="right-chevron" class="size-full"></i>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide h-auto!">
+                <a href="#" class="group">
+                  <div
+                    class="aspect-4/5 w-full h-full bg-white relative flex rounded-2xl flex-col items-center justify-center group-hover:bg-accent transition-all duration-300">
+                    <p
+                      class="md:text-[150px] lg:text-[170px] xl:text-[200px] 2xl:text-[250px] transform rotate-270 text-secondary/10 font-host font-bold tracking-widest absolute z-0">
+                      003
+                    </p>
+                    <img src="images/IBQRQVPUKBJTIVD.webp" alt="" class="w-full relative z-10 object-cover" />
+                    <p
+                      class="text-accent text-xl xl:text-2xl 2xl:text-3xl font-semibold text-end absolute z-20 bottom-10 right-10 group-hover:text-primary transition-all duration-300">
+                      Debriyaj ve<br />Şanzıman Parçaları
+                    </p>
+                    <div
+                      class="size-16 p-4 hidden group-hover:flex justify-between absolute top-10 right-10 items-center border border-primary hover:border-primary-interactive hover:bg-primary-interactive text-primary hover:text-primary-interactive active:scale-95 transition-all duration-300 rounded-2xl cursor-pointer">
+                      <i data-aether-icon="right-chevron" class="size-full"></i>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide h-auto!">
+                <a href="#" class="group">
+                  <div
+                    class="aspect-4/5 w-full h-full bg-white relative flex rounded-2xl flex-col items-center justify-center group-hover:bg-accent transition-all duration-300">
+                    <p
+                      class="md:text-[150px] lg:text-[170px] xl:text-[200px] 2xl:text-[250px] transform rotate-270 text-secondary/10 font-host font-bold tracking-widest absolute z-0">
+                      004
+                    </p>
+                    <img src="images/BKXPFUEPKMQLFTN.webp" alt="" class="w-full relative z-10 object-cover" />
+                    <p
+                      class="text-accent text-xl xl:text-2xl 2xl:text-3xl font-semibold text-end absolute z-20 bottom-10 right-10 group-hover:text-primary transition-all duration-300">
+                      Motor<br />Takozları
+                    </p>
+                    <div
+                      class="size-16 p-4 hidden group-hover:flex justify-between absolute top-10 right-10 items-center border border-primary hover:border-primary-interactive hover:bg-primary-interactive text-primary hover:text-primary-interactive active:scale-95 transition-all duration-300 rounded-2xl cursor-pointer">
+                      <i data-aether-icon="right-chevron" class="size-full"></i>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide h-auto!">
+                <a href="#" class="group">
+                  <div
+                    class="aspect-4/5 w-full h-full bg-white relative flex rounded-2xl flex-col items-center justify-center group-hover:bg-accent transition-all duration-300">
+                    <p
+                      class="md:text-[150px] lg:text-[170px] xl:text-[200px] 2xl:text-[250px] transform rotate-270 text-secondary/10 font-host font-bold tracking-widest absolute z-0">
+                      005
+                    </p>
+                    <img src="images/KXBRUSJWVFSUMAA.webp" alt="" class="w-full relative z-10 object-cover" />
+                    <p
+                      class="text-accent text-xl xl:text-2xl 2xl:text-3xl font-semibold text-end absolute z-20 bottom-10 right-10 group-hover:text-primary transition-all duration-300">
+                      Rulman ve<br />Burç Grubu
+                    </p>
+                    <div
+                      class="size-16 p-4 hidden group-hover:flex justify-between absolute top-10 right-10 items-center border border-primary hover:border-primary-interactive hover:bg-primary-interactive text-primary hover:text-primary-interactive active:scale-95 transition-all duration-300 rounded-2xl cursor-pointer">
+                      <i data-aether-icon="right-chevron" class="size-full"></i>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex w-full items-center justify-end aether-container">
+          <p class="text-accent font-semibold text-lg max-sm:text-center mb-6">
+            Aracın performansını ve güvenliğini artıran kritik yedek parça
+            çözümleri sunuyoruz.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="aether-container">
+    <div
+      class="bg-fixed bg-center bg-no-repeat bg-cover p-8 md:p-16 relative md:h-[80vh] w-full flex items-center rounded bg-[linear-gradient(135deg,rgba(0,0,0,0.5),transparent),url('../images/NVYXYSALQBMYWMR.webp')]">
+      <div class="flex flex-col gap-2 h-full justify-center 2xl:px-48 w-full">
+        <p
+          class="text-4xl md:text-5xl xl:text-7xl font-semibold text-shadow-2xs font-boldonse leading-loose text-white mb-9 pb-6 border-b-5 border-white w-fit">
+          GELECEK<br />
+          İÇİN<br />
+          ÇALIŞIR
+        </p>
+
+        <div class="flex w-full justify-between xl:items-center gap-6 max-xl:flex-col">
+          <a href="#" class="btn-1">
+            Kurumsal
+            <i data-aether-icon="right-arrow" class="size-5"></i>
+          </a>
+          <p class="text-primary w fit">
+            Doğaya saygılı teknolojilerle geleceği inşa ediyoruz.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="aether-container">
+    <div class="relative w-full min-h-[80vh]">
+      <img class="absolute inset-0 size-full max-sm:object-cover" src="images/DHVLZIPKQHFIAUL.webp" alt="" />
+      <div class="relative px-4 2xl:px-48 pt-12 xl:pt-24 pb-12 sm:pb-24 lg:pb-36 2xl:pb-48">
+        <div class="flex w-full items-center xl:justify-end mb-12">
+          <p class="uppercase text-lg font-light tracking-[0.2em]">
+            Biz Ne Yapıyoruz?
+          </p>
+        </div>
+        <div class="flex flex-col gap-3 w-full">
+          <div class="w-full border border-dashed border-white/30"></div>
+
+          <div
+            class="flex w-full relative justify-between items-center gap-4 px-4 sm:px-8 py-8 sm:py-12 xl:py-16 group hover:bg-yeter/50 rounded-2xl transition-all duration-300">
+            <div
+              class="max-xl:absolute xl:w-1/2 z-0 text-7xl text-yeter font-boldonse group-hover:text-white transition-all duration-300 pointer-events-none">
+              01
+            </div>
+            <div class="w-full xl:w-1/2 relative z-10">
+              <div class="flex flex-col gap-2">
+                <p class="text-white text-2xl sm:text-4xl font-bold">
+                  Geniş Ürün Gamı
+                </p>
+                <p class="text-white/90 xl:opacity-0 group-hover:opacity-100 transition-all duration-300">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Eveniet, dolor. Quibusdam, vitae vero excepturi dignissimos
+                  necessitatibus tenetur atque corrupti delectus.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-full border border-dashed border-white/30"></div>
+          <div
+            class="flex w-full relative justify-between items-center gap-4 px-4 sm:px-8 py-8 sm:py-12 xl:py-16 group hover:bg-yeter/50 rounded-2xl transition-all duration-300">
+            <div
+              class="max-xl:absolute xl:w-1/2 z-0 text-7xl text-yeter font-boldonse group-hover:text-white transition-all duration-300 pointer-events-none">
+              02
+            </div>
+            <div class="w-full xl:w-1/2 relative z-10">
+              <div class="flex flex-col gap-2">
+                <p class="text-white text-2xl sm:text-4xl font-bold">
+                  Kalite Standartları ve Üretim Süreçleri
+                </p>
+                <p class="text-white/90 xl:opacity-0 group-hover:opacity-100 transition-all duration-300">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Eveniet, dolor. Quibusdam, vitae vero excepturi dignissimos
+                  necessitatibus tenetur atque corrupti delectus.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-full border border-dashed border-white/30"></div>
+          <div
+            class="flex w-full relative justify-between items-center gap-4 px-4 sm:px-8 py-8 sm:py-12 xl:py-16 group hover:bg-yeter/50 rounded-2xl transition-all duration-300">
+            <div
+              class="max-xl:absolute xl:w-1/2 z-0 text-7xl text-yeter font-boldonse group-hover:text-white transition-all duration-300 pointer-events-none">
+              03
+            </div>
+            <div class="w-full xl:w-1/2 relative z-10">
+              <div class="flex flex-col gap-2">
+                <p class="text-white text-2xl sm:text-4xl font-bold">
+                  Hız Lojistik ve Teslimat Altyapısı
+                </p>
+                <p class="text-white/90 xl:opacity-0 group-hover:opacity-100 transition-all duration-300">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Eveniet, dolor. Quibusdam, vitae vero excepturi dignissimos
+                  necessitatibus tenetur atque corrupti delectus.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-full border border-dashed border-white/30"></div>
+          <div
+            class="flex w-full relative justify-between items-center gap-4 px-4 sm:px-8 py-8 sm:py-12 xl:py-16 group hover:bg-yeter/50 rounded-2xl transition-all duration-300">
+            <div
+              class="max-xl:absolute xl:w-1/2 z-0 text-7xl text-yeter font-boldonse group-hover:text-white transition-all duration-300 pointer-events-none">
+              04
+            </div>
+            <div class="w-full xl:w-1/2 relative z-10">
+              <div class="flex flex-col gap-2">
+                <p class="text-white text-2xl sm:text-4xl font-bold">
+                  Satış Sonrası Destek ve Teknik Hizmetler
+                </p>
+                <p class="text-white/90 xl:opacity-0 group-hover:opacity-100 transition-all duration-300">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Eveniet, dolor. Quibusdam, vitae vero excepturi dignissimos
+                  necessitatibus tenetur atque corrupti delectus.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-full border border-dashed border-white/30"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="h-aether-section-gap-secondary"></div>
+
+  <section class="aether-container">
+    <div class="aether-container">
+      <div class="flex flex-col gap-2 xl:w-fit justify-start items-start sm:mb-12">
+        <p class="subtitle-secondary w-fit">MEDYA DÖKÜMANLARI</p>
+        <h2 class="title-secondary text-accent xl:w-fit border-b-5 border-accent pb-5 mb-12 flex-nowrap text-nowrap">
+          MEDYA İÇERİKLERİMİZİ<br />
+          KEŞFEDEBİLİRSİNİZ
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-12 gap-6 w-full justify-items-center">
+        <div class="col-span-12 lg:col-span-6 xl:col-span-4 2xl:col-span-3 size-full">
+          <a href="#" class="flex flex-col gap-2.5 cursor-pointer group">
+            <img src="images/ONHSRFSQWCXQDQE.webp" loading="lazy"
+              class="w-full object-cover group-hover:brightness-75 dark:group-hover:brightness-110 transition duration-300 rounded-2xl" />
+
+            <p class="text-secondary group-hover:text-secondary-interactive transition-colors line-clamp-3">
+              28.10.2025
+            </p>
+
+            <h3 class="text-[#324C5E] text-lg sm:text-2xl font-semibold transition-colors">
+              Selamoğulları’nın İklim Teknolojileri Hızlandırma Programı’na
+              Başvurular Başladı
+            </h3>
+
+            <button
+              class="btn-2 px-0 py-4 h-fit text-base text-secondary group-hover:text-accent group-hover:border-accent">
+              İncele <i data-aether-icon="right-arrow" class="size-5"></i>
+            </button>
+          </a>
+        </div>
+        <div class="col-span-12 lg:col-span-6 xl:col-span-4 2xl:col-span-3 size-full">
+          <a href="#" class="flex flex-col gap-2.5 cursor-pointer group">
+            <img src="images/LVLQKYSQLOGSWWM.webp" loading="lazy"
+              class="w-full object-cover group-hover:brightness-75 dark:group-hover:brightness-110 transition duration-300 rounded-2xl" />
+
+            <p class="text-secondary group-hover:text-secondary-interactive transition-colors line-clamp-3">
+              28.10.2025
+            </p>
+
+            <h3 class="text-[#324C5E] text-lg sm:text-2xl font-semibold transition-colors">
+              SLM’nin İklim Teknolojileri Hızlandırma Programı’na Başvurular
+              Başladı
+            </h3>
+
+            <button
+              class="btn-2 px-0 py-4 h-fit text-base text-secondary group-hover:text-accent group-hover:border-accent">
+              İncele <i data-aether-icon="right-arrow" class="size-5"></i>
+            </button>
+          </a>
+        </div>
+
+        <div class="col-span-12 lg:col-span-6 xl:col-span-4 2xl:col-span-3 size-full">
+          <a href="#" class="flex flex-col gap-2.5 cursor-pointer group">
+            <img src="images/SMAOJRSXUPNJIYZ.webp" loading="lazy"
+              class="w-full object-cover group-hover:brightness-75 dark:group-hover:brightness-110 transition duration-300 rounded-2xl" />
+
+            <p class="text-secondary group-hover:text-secondary-interactive transition-colors line-clamp-3">
+              28.10.2025
+            </p>
+
+            <h3 class="text-[#324C5E] text-lg sm:text-2xl font-semibold transition-colors">
+              Dünya Ekonomik Forumu, SLM’nin Dijital Dönüşüm Uygulamalarını
+              Küresel Ölçekte Örnek Göstermeyi Sürdürüyor
+            </h3>
+
+            <button
+              class="btn-2 px-0 py-4 h-fit text-base text-secondary group-hover:text-accent group-hover:border-accent">
+              İncele <i data-aether-icon="right-arrow" class="size-5"></i>
+            </button>
+          </a>
+        </div>
+
+        <div class="col-span-12 lg:col-span-6 xl:col-span-4 2xl:col-span-3 size-full">
+          <a href="#" class="flex flex-col gap-2.5 cursor-pointer group">
+            <img src="images/IDRCTWDYLYJXQGV.webp" loading="lazy"
+              class="w-full object-cover group-hover:brightness-75 dark:group-hover:brightness-110 transition duration-300 rounded-2xl" />
+
+            <p class="text-secondary group-hover:text-secondary-interactive transition-colors line-clamp-3">
+              28.10.2025
+            </p>
+
+            <h3 class="text-[#324C5E] text-lg sm:text-2xl font-semibold transition-colors">
+              SLM’nin İklim Teknolojileri Hızlandırma Programı’na Başvurular
+              Başladı
+            </h3>
+
+            <button
+              class="btn-2 px-0 py-4 h-fit text-base text-secondary group-hover:text-accent group-hover:border-accent">
+              İncele <i data-aether-icon="right-arrow" class="size-5"></i>
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="h-aether-section-gap-secondary"></div>
+
+  <section class="aether-container">
+    <div class="relative w-full rounded-2xl flex bg-[#d4f3ff] justify-between items-start p-4 sm:p-12">
+      <div class="flex flex-col gap-8">
+        <p class="text-accent text-3xl md:text-6xl font-semibold leading-none">
+          Otomotivde geleceği<br />
+          yakalamaya hazır mısınız?
+        </p>
+
+        <p class="text-[#6F818F] text-lg">
+          Bizimle iletişime geçip ürünlerimiz hakkında daha çok bilgi
+          alabilirsiniz.
+        </p>
+
+        <button class="btn-1 border-accent text-accent">
+          İLETİŞİM
+          <i data-aether-icon="right-arrow"></i>
+        </button>
+      </div>
+      <div class="absolute right-12 top-12">
+        <i data-aether-icon="right-arrow" class="size-48 -rotate-45 text-accent opacity-10"></i>
+      </div>
+    </div>
+  </section>
+
+  <div class="h-aether-section-gap-secondary"></div>
+
+  <footer class="aether-container">
+
+    <div class="bg-[#f3f6fb] text-[#0144a3] py-16 px-6 md:px-12 font-sans w-full">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-12 2xl:px-36">
+        <a href="index.html">
+          <img src="images/logo.svg" alt="Logo" class="xl:w-100" />
+        </a>
+
+        <div class="flex flex-wrap items-center gap-8">
+          <div class="flex items-center gap-6">
+            <a href="#" target="_blank" aria-label="instagram" class="w-8 h-8 flex items-center justify-center">
+              <i data-aether-icon="instagram" class="size-full"></i>
+            </a>
+            <a href="#" target="_blank" aria-label="facebook" class="w-8 h-8 flex items-center justify-center">
+              <i data-aether-icon="facebook" class="size-full"></i>
+            </a>
+            <a href="#" target="_blank" aria-label="twitter" class="w-8 h-8 flex items-center justify-center">
+              <i data-aether-icon="twitter" class="size-full"></i>
+            </a>
+            <a href="#" target="_blank" aria-label="linkedin" class="w-8 h-8 flex items-center justify-center">
+              <i data-aether-icon="linkedin" class="size-full"></i>
+            </a>
+          </div>
+
+          <button class="flex items-center gap-3 font-medium hover:opacity-75 transition-opacity" id="back-to-top">
+            <span class="sm:text-lg">Yukarı Git</span>
+            <div class="w-14 h-14 rounded-full border border-[#0144a3] flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                stroke="currentColor" class="w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+              </svg>
+            </div>
+          </button>
+        </div>
+      </div>
+
+      <div class="w-full border-t border-dashed border-[#0144a3]/20 my-8 sm:my-12 md:my-16 xl:my-20 2xl:my-24"></div>
+
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-8 2xl:px-36">
+        <nav class="md:col-span-4 lg:col-span-3">
+          <ul class="space-y-8 2xl:space-y-16">
+            <li class="flex items-baseline gap-6">
+              <span class="text-sm font-medium opacity-60 w-6">01</span>
+              <a href="corporate.html"
+                class="sm:text-xl font-bold hover:underline underline-offset-4 decoration-2">Selamoğulları</a>
+            </li>
+            <li class="flex items-baseline gap-6">
+              <span class="text-sm font-medium opacity-60 w-6">02</span>
+              <a href="products.html"
+                class="sm:text-xl font-bold hover:underline underline-offset-4 decoration-2">Ürünler</a>
+            </li>
+            <li class="flex items-baseline gap-6">
+              <span class="text-sm font-medium opacity-60 w-6">03</span>
+              <a href="media.html"
+                class="sm:text-xl font-bold hover:underline underline-offset-4 decoration-2">Medya</a>
+            </li>
+            <li class="flex items-baseline gap-6">
+              <span class="text-sm font-medium opacity-60 w-6">04</span>
+              <a href="contact.html"
+                class="sm:text-xl font-bold hover:underline underline-offset-4 decoration-2">İletişim</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="md:col-span-8 lg:col-span-6 flex flex-col">
+          <div class="flex items-baseline gap-6 mb-4">
+            <span class="text-sm font-medium opacity-60 w-6 shrink-0">05</span>
+            <h3 class="sm:text-xl font-bold">E-Bülten'e kaydol</h3>
+          </div>
+
+          <div class="pl-0 sm:pl-12 flex flex-col grow">
+            <p class="text-sm leading-relaxed mb-8 opacity-80 max-w-lg">
+              Selamoğulları A.Ş., otomotiv yedek parça sektöründeki
+              yolculuğuna 1987 yılında Konya Motorlu Sanayi Çarşısı'nda
+              başlamış; kurulduğu günden bu yana güçlü pazarlama
+              organizasyonu, yaygın bayi ağı ve disiplinli operasyonel
+              yapısıyla sektörde güvenilir bir marka haline gelmiştir.
+            </p>
+
+            <form class="flex items-center bg-[#dde5f4] rounded-xl px-6 py-4 max-w-lg"
+              aria-label="E-Bülten Kayıt Formu">
+              <input type="email" placeholder="E-Posta adresiniz." required
+                class="bg-transparent border-none outline-none text-sm placeholder-[#0144a3]/60 w-full font-medium" />
+              <button type="submit"
+                class="flex items-center gap-3 font-semibold hover:opacity-75 transition-opacity whitespace-nowrap border-l border-[#0144a3]/20 pl-4 ml-4">
+                Kaydol
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                  stroke="currentColor" class="w-4 h-4">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <address class="md:col-span-12 lg:col-span-3 not-italic">
+          <div class="flex items-baseline gap-6 mb-4">
+            <span class="text-sm font-medium opacity-60 w-6 shrink-0">06</span>
+            <h3 class="sm:text-xl font-bold">Get in Touch</h3>
+          </div>
+
+          <div class="pl-0 sm:pl-12 space-y-6 text-sm font-medium opacity-90">
+            <p class="leading-relaxed">
+              Örnek Mah., Örnek Cd. No: 363, 42060<br />
+              Karatay / Konya, Türkiye
+            </p>
+            <div class="space-y-3">
+              <a href="mailto:info@selamogullari.com.tr"
+                class="block hover:underline underline-offset-2">info@selamogullari.com.tr</a>
+              <a href="tel:+908501234567890" class="block hover:underline underline-offset-2">+90 (850) 123 456 78
+                90</a>
+            </div>
+          </div>
+        </address>
+      </div>
+
+      <div class="w-full border-t border-dashed border-[#0144a3]/20 my-8 sm:my-12 md:my-16 xl:my-20 2xl:my-24"></div>
+
+      <div class="flex flex-col md:flex-row justify-between items-center gap-6 font-medium opacity-90 2xl:px-36">
+        <a href="#" class="hover:text-[#0144a3] hover:opacity-100 transition-opacity">Bilgi Toplumu Hizmetleri</a>
+        <a href="#" class="hover:text-[#0144a3] hover:opacity-100 transition-opacity">Kişisel Verileri Koruma Kanunu</a>
+        <a href="#" class="hover:text-[#0144a3] hover:opacity-100 transition-opacity">Güvenlik ve Gizlilik</a>
+        <a href="#" class="hover:text-[#0144a3] hover:opacity-100 transition-opacity">Kullanım Sözleşmesi</a>
+      </div>
+
+      <div class="w-full border-t border-dashed border-[#0144a3]/20 my-8 sm:my-12 md:my-16 xl:my-20 2xl:my-24"></div>
+
+      <div class="flex flex-col md:flex-row justify-between items-center gap-6 font-medium opacity-90 2xl:px-36">
+        <p>© 2025 All Rights Reserved.</p>
+      </div>
+    </div>
+
+  </footer>
+
+  <script src="js/fancybox.umd.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.8.0/countUp.umd.js"></script>
+  <script src="js/aether.js"></script>
+  <script src="js/aether-icons.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

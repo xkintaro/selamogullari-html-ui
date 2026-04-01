@@ -1,0 +1,10 @@
+{
+  "name": "selamogullari-html",
+  "scripts": {
+    "dev": "npx @tailwindcss/cli -i ./css/input.css -o ./css/output.css --watch"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.18",
+    "tailwindcss": "^4.1.18"
+  }
+}
